@@ -1,0 +1,15 @@
+
+
+.navMenuItem{
+    background-color: #4C996B;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+
+}
+
+.navMenuItem:hover{
+    background-color: #3F8059;
+
+}
