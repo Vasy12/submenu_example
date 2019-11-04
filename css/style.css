@@ -1,15 +1,56 @@
+body{
+    background-color: #F5F5F5;
+}
+
+a, a:hover, a:active, a:visited, a:link {
+    text-decoration: none;
+    color: inherit;
+
+}
 
 
-.navMenuItem{
+.topLevelMenu {
+    font-size: 0;
+}
+
+.topLevelMenu > li {
+    display: inline-block;
+
+}
+
+
+.navMenuItem {
+    font-size: 18px;
     background-color: #4C996B;
     cursor: pointer;
     box-sizing: border-box;
     text-align: center;
     color: white;
+    padding: 15px 20px;
+    width: 180px;
+    text-transform: capitalize;
+    border: 1px solid #3F8059;
+
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.navMenuItem:hover {
+    background-color: #3F8059;
 
 }
 
-.navMenuItem:hover{
-    background-color: #3F8059;
+.subMenuContainer{
+    position: relative;
+}
 
+.subMenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.navMenuItem:hover > .subMenu{
+    display: block;
 }
